@@ -6,9 +6,9 @@ main {
     flex-grow: 1;
   }
 
-  div.left {
-    /* background-image: url(); */
-  }
+  /* div.left {
+    background-image: url();
+  } */
 
   div.box {
     height: 600px;
