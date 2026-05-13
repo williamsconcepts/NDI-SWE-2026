@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --theme-color: purple;
+    --theme-text-color: white;
+    --box-padding: 10px;
+    --box-width: 150px;
+    --box-height: 150px;
+    --box-border: 3px solid var(--theme-color);
+}
+
+main {
+    section.basic-sample {
+        button {
+            padding: 6px 16px;
+            font-size: 14px;
+            background-color: var(--theme-color);
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        div.box {
+            width: var(--box-width);
+            height: var(--box-height);
+            border: var(--box-border);
+            margin-top: 20px;
+        }
+
+        div.another-box {
+            width: var(--box-width);
+            height: var(--box-height);
+            border: var(--box-border);
+            background-color: var(--theme-color);
+            margin-top: 20px;
+        }
+
+        details {
+            padding: 5px 10px;
+            background-color: var(--theme-color);
+            color: white;
+            margin-top: 20px;
+        }
+    }
+}
