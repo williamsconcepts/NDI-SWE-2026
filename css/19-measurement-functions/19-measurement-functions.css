@@ -1,0 +1,13 @@
+main {
+  section.min-function {
+    border: 3px solid black;
+    width: min(100%, 700px);
+    font-size: min(3vw, 36px);
+  }
+
+  section.max-function {
+    border: 3px solid black;
+    width: max(50%, 300px);
+    font-size: max(3vw, 36px);
+  }
+}
