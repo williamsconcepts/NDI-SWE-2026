@@ -1,23 +1,11 @@
-<<<<<<< HEAD
-=======
-/* Reset Styles */
->>>>>>> 1e8e0cc963166f13e15f14a210477776e5a82645
 * {
     box-sizing: border-box;
 }
 
-<<<<<<< HEAD
 :root {
     --theme-color: purple;
     --theme-text-color: white;
     --box-padding: 10px;
-=======
-/* CSS Variables */
-:root {
-    --theme-color: orangered;
-    --theme-text-color: white;
-    --box-padding: 10px 15px 20px 25px;
->>>>>>> 1e8e0cc963166f13e15f14a210477776e5a82645
     --box-width: 150px;
     --box-height: 150px;
     --box-border: 3px solid var(--theme-color);
@@ -28,40 +16,21 @@ main {
         button {
             padding: 6px 16px;
             font-size: 14px;
-<<<<<<< HEAD
             background-color: var(--theme-color);
             color: white;
-=======
-            color: var(--theme-text-color);
-            background-color: var(--theme-color);
->>>>>>> 1e8e0cc963166f13e15f14a210477776e5a82645
             border: none;
             border-radius: 4px;
         }
 
         div.box {
             width: var(--box-width);
-<<<<<<< HEAD
             height: var(--box-height);
             border: var(--box-border);
             margin-top: 20px;
-=======
-            height: var(--box-height) ;
-            border: var(--box-border);
-            padding: var(--box-padding);
-            margin-top: 20px;
-
-            div.inner-box {
-                width: 100%;
-                height: 100%;
-                border: 2px solid teal;
-            }
->>>>>>> 1e8e0cc963166f13e15f14a210477776e5a82645
         }
 
         div.another-box {
             width: var(--box-width);
-<<<<<<< HEAD
             height: var(--box-height);
             border: var(--box-border);
             background-color: var(--theme-color);
@@ -73,22 +42,6 @@ main {
             background-color: var(--theme-color);
             color: white;
             margin-top: 20px;
-=======
-            height: var(--box-height) ;
-            border: var(--box-border);
-            padding: var(--box-padding);
-            margin-top: 20px;
-            background-color: var(--theme-color);
-        }
-
-        details {
-            summary {
-                padding: 5px 10px;
-                background-color: var(--theme-color);
-                color: var(--theme-text-color);
-                margin-top: 20px;
-            }
->>>>>>> 1e8e0cc963166f13e15f14a210477776e5a82645
         }
     }
 }
