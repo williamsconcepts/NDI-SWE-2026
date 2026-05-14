@@ -1,0 +1,67 @@
+/* Reset styles  */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol {
+  padding: 0;
+  margin: 0;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Design systems */
+:root {
+  --primary-color: brown;
+  --primary-color-light: rgb(217, 197, 184);
+  --primary-color-dark: rgb(123, 20, 20);
+  --bg: linear-gradient(135deg, rgb(249, 217, 153), rgb(246, 224, 198));
+  --border: 1px solid var(--pimary-color-dark);
+  --border-light: 1px solid var(--primary-color-light);
+}
+
+body {
+  header {
+    border-bottom: var(--border-light);
+    padding: 20px;
+
+    nav {
+      display: flex;
+      justify-content: center;
+
+      div.wrapper {
+        width: 100%;
+        max-width: 1120px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        background-color: brown;
+
+        ul {
+          display: flex;
+          list-style: none;
+
+          li {
+            a {
+              list-style: none;
+              text-decoration: none;
+              color: black;
+              padding: 6px 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
