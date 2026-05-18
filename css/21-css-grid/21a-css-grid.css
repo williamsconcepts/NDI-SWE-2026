@@ -1,4 +1,27 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+ol,
+a {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 main {
+  h1 {
+    padding: 16px;
+  }
+
   section {
     display: grid;
     max-width: 500px;
