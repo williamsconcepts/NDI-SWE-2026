@@ -1,0 +1,37 @@
+main {
+    section.intro {
+        div.container {
+
+            /* Initialize the layout of grid  */
+            display: grid;
+            border: 1px solid black;
+            /* specify the number of columns and the values of their width  */
+            grid-template-columns: 200px 250px 200px;
+
+            div {
+                border: 1px solid orange;
+                padding: 30px;
+            }
+        }
+    }
+
+        section.fractional {
+        div.container {
+
+            /* Initialize the layout of grid  */
+            display: grid;
+            border: 1px solid black;
+            /* specify the number of columns and the values of their width  */
+            grid-template-columns: 2fr 1fr 1fr;
+            column-gap: 30px;
+            row-gap: 10px;
+            /* shorthand syntax for row and column gaps  */
+            gap: 10px 30px;
+
+            div {
+                border: 1px solid orange;
+                padding: 30px;
+            }
+        }
+    }
+}
