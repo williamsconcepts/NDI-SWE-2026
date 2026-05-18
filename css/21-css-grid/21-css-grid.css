@@ -1,37 +1,75 @@
 main {
-    section.intro {
-        div.container {
+  div.container {
+    border: 1px solid black;
+  }
+  div {
+    border: 1px solid orange;
+    padding: 10px;
+  }
 
-            /* Initialize the layout of grid  */
-            display: grid;
-            border: 1px solid black;
-            /* specify the number of columns and the values of their width  */
-            grid-template-columns: 200px 250px 200px;
-
-            div {
-                border: 1px solid orange;
-                padding: 30px;
-            }
-        }
+  section.intro {
+    div.container {
+      /* Initialize the layout of grid  */
+      display: grid;
+      border: 1px solid black;
+      /* specify the number of columns and the values of their width  */
+      grid-template-columns: 200px 250px 200px;
     }
+  }
 
-        section.fractional {
-        div.container {
-
-            /* Initialize the layout of grid  */
-            display: grid;
-            border: 1px solid black;
-            /* specify the number of columns and the values of their width  */
-            grid-template-columns: 2fr 1fr 1fr;
-            column-gap: 30px;
-            row-gap: 10px;
-            /* shorthand syntax for row and column gaps  */
-            gap: 10px 30px;
-
-            div {
-                border: 1px solid orange;
-                padding: 30px;
-            }
-        }
+  section.fractional {
+    div.container {
+      /* Initialize the layout of grid  */
+      display: grid;
+      border: 1px solid black;
+      /* specify the number of columns and the values of their width  */
+      grid-template-columns: 2fr 1fr 1fr;
+      column-gap: 30px;
+      row-gap: 10px;
+      /* shorthand syntax for row and column gaps  */
+      /* gap: 10px 30px; */
     }
+  }
+
+  /* Repeat Grid columns  */
+  section.repeat {
+    div.container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+
+  /* Mixed Grid columns  */
+  section.mixed-values {
+    div.container {
+      display: grid;
+      grid-template-columns: 200px 2fr 1fr 300px;
+    }
+  }
+
+  /* Grid Template rows  */
+  section.grid-rows {
+    div.container {
+      display: grid;
+      grid-template-rows: 1fr 2fr 3fr 4fr;
+    }
+  }
+
+  /* Grid columns and rows combined  */
+  /* Explicit columns and rows  */
+  section.row-column {
+    div.container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 3fr;
+      grid-template-rows: 100px 2fr 3fr;
+    }
+  }
+
+  section.auto-rows {
+    div.container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-auto-rows: minmax(200px, auto);
+    }
+  }
 }
