@@ -18,6 +18,7 @@ a {
 }
 
 main {
+  padding: 30px;
   h1 {
     padding: 16px;
   }
