@@ -1,0 +1,57 @@
+/* Animation keyframes */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    /* background-color: teal; */
+  }
+  to {
+    opacity: 1;
+    background-color: teal;
+  }
+}
+
+  @keyframes float {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+
+
+  }
+
+* {
+  box-sizing: border-box;
+  /* padding: 20px; */
+}
+
+main {
+  div[class*="box"] {
+    height: 100px;
+    width: 100px;
+    border: 1px solid gray;
+  }
+
+  section {
+    div.box-1 {
+      background-color: aquamarine;
+      animation: fade-in 3s ease-out 1s;
+    }
+
+     div.box-2 {
+      background-color: greenyellow;
+      animation: fade-in 3s ease-out 0s infinite alternate-reverse;
+    }
+  }
+
+  section.stepped-animation {
+      div.box-1 {
+      background-color: lightsalmon;
+      animation: float 3s ease-in-out 1s infinite;
+    }
+  }
+}

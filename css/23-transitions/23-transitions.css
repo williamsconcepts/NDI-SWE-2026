@@ -1,0 +1,107 @@
+/* Reset Styles */
+/* body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+aside,
+article {
+  padding: 0;
+  margin: 0;
+} */
+
+:root {
+  --timing-function-distance: 600px;
+}
+
+* {
+  box-sizing: border-box;
+  /* padding: 20px; */
+}
+
+main {
+  div[class*="box"] {
+    height: 100px;
+    width: 100px;
+    border: 1px solid gray;
+  }
+
+  section.intro {
+    div.box-1 {
+      background-color: aquamarine;
+      opacity: 1;
+
+      transition:
+        background-color 1s ease-in 0s,
+        opacity 0.5s ease-out,
+        height 0.7s linear 0.3s,
+        /* width 0.7s linear 0.3s;  */
+    }
+
+    div.box-1:hover {
+      background-color: yellow;
+      opacity: 0.5;
+      height: 160px;
+      width: 200px;
+    }
+  }
+
+  section.timing-functions {
+    div.box-1 {
+      background-color: yellow;
+      transition: transform 1s linear 0s;
+      transform: translateX(var(--timing-function-distance));
+    }
+
+    div.box-2 {
+      background-color: blue;
+      transition: transform 1s ease-in 0s;
+      transform: translateX(var(--timing-function-distance));
+    }
+
+    div.box-3 {
+      background-color: green;
+      transition: transform 1s ease-out 0s;
+      transform: translateX(var(--timing-function-distance));
+    }
+
+    div.box-4 {
+      background-color: pink;
+      transition: transform 1s ease-in-out 0s;
+      transform: translateX(var(--timing-function-distance));
+    }
+
+    div.box-5 {
+      background-color: blueviolet;
+      transition: transform 1s ease 0s;
+      transform: translateX(var(--timing-function-distance));
+    }
+  }
+
+  section.cubic-bezier {
+    div.box-1 {
+      background-color: red;
+      transform: translateX(800px);
+      transition: all 0.8s cubic-bezier(0, 1.62, 0.84, 0.13);
+    }
+
+    div.box-2 {
+      background-color: teal;
+      transform: translateX(400px);
+      transition: all 0.8s cubic-bezier(0.98, 0.12, 0.84, 0.13);
+    }
+
+        div.box-3 {
+      background-color: burlywood;
+      transform: translateX(200px);
+      transition: all 0.5s cubic-bezier(0.92, 0.09, 0.06, 0.92);
+    }
+  }
+}
+
+
+/* reflow, refloat, reprint in front-end */

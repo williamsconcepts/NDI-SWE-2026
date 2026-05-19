@@ -1,65 +1,80 @@
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-ul,
-li,
-ol,
-a {
-  margin: 0;
-  padding: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 main {
-  padding: 30px;
-  h1 {
-    padding: 16px;
-  }
+    div.container {
+        border: 1px solid black;
 
-  section {
-    display: grid;
-    max-width: 500px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    border: 1px solid black;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
-
-    div {
-      padding: 40px;
-      border: 1px solid gray;
+        div {
+            border: 1px solid orange;
+            padding: 10px;
+        }
     }
 
-    div:nth-child(1) {
-      /* This syntax specifies the start point, a slash and end point line number e.g (1/4) */
-      grid-column: 1 / 2;
-      grid-row: 1 / 4;
+    section.intro {
+        div.container {
+            /* Initilize the layout as grid */
+            display: grid;
+            /* Specify the number of columns and the values of their widths */
+            grid-template-columns: 200px 250px 200px;
+        }
     }
 
-    div:nth-child(2) {
-      grid-column: 2 / span 2;
-      grid-row: 1 / 2;
+    /* Fractional Units */
+    section.fractional {
+        div.container {
+            /* Initilize the layout as grid */
+            display: grid;
+            /* Specify the number of columns and the values of their widths in fractional units of their parent using the "fr" unit */
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            column-gap: 30px;
+            row-gap: 10px;
+            /* Shorthand syntax for row and column gaps */
+            /* gap: 10px 30px; */
+
+        }
     }
 
-    div:nth-child(3) {
-      grid-column: 2 / 3;
-      grid-row: 2 / 4;
+    /* Repeat Grid Columns */
+    section.repeat {
+        div.container {
+            display: grid;
+            /* This is used to repeat the number of columns for the specified number of times using the repeat() css function */
+            /* The below is used instead of `grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr` */
+            grid-template-columns: repeat(6, 1fr);
+        }
     }
 
-    div:nth-child(4) {
-      /* grid-column: 3 / span 1;
-      grid-row: 2 / span 2; */
-
-      /* shorthand syntax for the above {grid-area: row-start / column-start / row-end / column-end} */
-      grid-area: 2 / 3 / 4 / 4;
+    /* Using Mixed responsive and static units */
+    section.mixed-values {
+        div.container {
+            display: grid;
+            grid-template-columns: 200px 2fr 1fr 300px;
+        }
     }
-  }
+
+    /* Using Grid Template Rows */
+    section.grid-rows {
+        div.container {
+            display: grid;
+            grid-template-rows: 1fr 2fr 3fr 4fr;
+        }
+    }
+
+    /* Grid Columns and Rows combined */
+    /* Explicit columns and rows */
+    section.row-column {
+        div.container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 3fr;
+            grid-template-rows: 100px 2fr 3fr;
+        }
+    }
+
+    /* Grid auto rows */
+    section.auto-rows {
+        div.container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            /* Specifies a minimum and maximum contraint for the grid rows. Auto meant no upper bound */
+            grid-auto-rows: minmax(100px, auto);
+        }
+    }
 }

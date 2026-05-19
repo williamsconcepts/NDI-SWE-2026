@@ -1,0 +1,50 @@
+/* Reset Styles */
+body, ol, ul, h1, h2, h3, h4, h5, h6,aside,article {
+    padding: 0;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    border: 1px dashed yellowgreen;
+    padding: 20px;
+}
+
+main {
+  section.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    gap: 10px;
+    grid-template-areas:
+      "header header header" 
+      "left article right"
+      "footer footer footer";
+
+    header {
+      grid-area: header;
+      text-align: center;
+    }
+
+    aside ul li {
+        list-style-type: none;
+    }
+    aside.left {
+      grid-area: right;
+    }
+
+      aside.left {
+      grid-area: left;
+    }
+
+    article {
+      grid-area: article;
+    }
+
+    footer {
+      grid-area: footer;
+      border-top: 2px solid yellow;
+      text-align: center;
+      padding: 30px;
+    }
+  }
+}
