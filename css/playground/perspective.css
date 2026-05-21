@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+
+      div[class*="box"] {
+        height: 120px;
+        width: 120px;
+        border: 1px solid yellow;
+        margin-left: 60px;
+    }
+
+
+    section.intro {
+        div.box-1 {
+            /* background-color: blue; */
+            position: relative;
+            perspective: 100px;
+
+            div.box-2 {
+                background-color: aqua;
+                padding: 50px;
+                position: absolute; 
+                border: 1px solid black;
+                background: rgba(100,100,100,0.5);
+                transform-style: preserve-3d;
+                transform: rotateX(45deg);
+
+            }
+
+            div.box-2:hover {
+                transform: rotate(135deg);
+                /* transform-origin: center; */
+                transform: translate(40%, 40%);
+            }
+        }
+    }
+}
