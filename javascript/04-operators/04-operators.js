@@ -27,8 +27,6 @@ console.log("Division:", a / b); /* Division */
 console.log("Modulus:", 14 % 5); /* Modulus (Remainder) */
 console.log("Exponentiation:", a ** b); /* Exponentiation */
 
-
-
 /** ============== Comparison Operators ============= */
 let x = 10;
 let y = 5;
@@ -44,21 +42,31 @@ console.log("Strictly not equal to:", x !== y); /* Strictly not equal to */
 
 /* The difference between "==" and "===" is that "==" performs type coercion, while "===" does not. */
 console.log("5 == '5':", 5 == "5"); /* true: This compares only value */
-console.log("5 === '5':", 5 === "5"); /* false: This compares both value and type */
-
+console.log(
+  "5 === '5':",
+  5 === "5",
+); /* false: This compares both value and type */
 
 /** ============== Logical Operators ============= */
 /*
     These are used to evaluate logical expressions, that resolve to "truthy" or "falsy" values.
 */
-let isSunny = true;
+let isSunny = false;
 let isWarm = false;
 let isChilled = true;
 
-console.log("Logical AND:", isSunny && isWarm && isChilled); /* Logical AND: A logical AND operation is true and only true, if all operamds are strictly true */
-console.log("Logical OR:", isSunny || isWarm || isChilled); /* Logical OR: A logical OR operation is true if at least one operand is true */
-console.log("Logical NOT:", !isSunny); /* Logical NOT: This is an inverse operation that inverts truthy and falsy values */
-
+console.log(
+  "Logical AND:",
+  isSunny && isWarm && isChilled,
+); /* Logical AND: A logical AND operation is true and only true, if all operamds are strictly true */
+console.log(
+  "Logical OR:",
+  isSunny || isWarm || isChilled,
+); /* Logical OR: A logical OR operation is true if at least one operand is true */
+console.log(
+  "Logical NOT:",
+  !isSunny,
+); /* Logical NOT: This is an inverse operation that inverts truthy and falsy values */
 
 /** ============== Assignment Operators ============= */
 let c = 10;
@@ -82,5 +90,7 @@ console.log("Assignment %=", c);
 c **= d; /* Equivalent to c = c ** d */
 console.log("Assignment **=", c);
 
-
 // Operator precedence: This refers to the order in which operators are evaluated in an expression.
+
+let result = 10 - 5 - 2;
+console.log(result);

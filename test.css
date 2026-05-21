@@ -1,0 +1,81 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes moveline {
+  0% {
+    transform: scaleX(0);
+  }
+
+  50% {
+    transform: scaleY(1);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Stepped Animations */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(150px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+main {
+  div.home {
+    div {
+      width: 100px;
+      height: 3px;
+      background: red;
+      margin-top: 8px;
+      transform-origin: left;
+      animation: moveline ease-in-out 1.5s infinite;
+    }
+  }
+
+  div.loader {
+    width: 120px;
+    height: 120px;
+    border: 10px solid transparent;
+    border-top: 10px solid royalblue;
+    border-right: 10px solid royalblue;
+    border-bottom: 10px solid royalblue;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+
+  div.ball {
+    background-color: red;
+    animation: bounce 1.4s ease-in 0.9s infinite;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+}
