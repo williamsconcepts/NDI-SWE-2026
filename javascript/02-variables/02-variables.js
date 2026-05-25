@@ -31,6 +31,7 @@ console.log(firstName, lastName, middleName, courseOfStudy);
 
 =======
 /* Other keywords for variable declaration */
+// let;
 // var;
 // const;
 
