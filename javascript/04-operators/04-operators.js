@@ -27,8 +27,6 @@ console.log("Division:", a / b); /* Division */
 console.log("Modulus:", 14 % 5); /* Modulus (Remainder) */
 console.log("Exponentiation:", a ** b); /* Exponentiation */
 
-
-
 /** ============== Comparison Operators ============= */
 let x = 10;
 let y = 5;
@@ -44,27 +42,36 @@ console.log("Strictly not equal to:", x !== y); /* Strictly not equal to */
 
 /* The difference between "==" and "===" is that "==" performs type coercion, while "===" does not. */
 console.log("5 == '5':", 5 == "5"); /* true: This compares only value */
-console.log("5 === '5':", 5 === "5"); /* false: This compares both value and type */
-
+console.log(
+  "5 === '5':",
+  5 === "5",
+); /* false: This compares both value and type */
 
 /** ============== Logical Operators ============= */
 /*
     These are used to evaluate logical expressions, that resolve to "truthy" or "falsy" values.
 */
-let isSunny = true;
+let isSunny = false;
 let isWarm = false;
 let isChilled = true;
 
-console.log("Logical AND:", isSunny && isWarm && isChilled); /* Logical AND: A logical AND operation is true and only true, if all operamds are strictly true */
-console.log("Logical OR:", isSunny || isWarm || isChilled); /* Logical OR: A logical OR operation is true if at least one operand is true */
-console.log("Logical NOT:", !isSunny); /* Logical NOT: This is an inverse operation that inverts truthy and falsy values */
-
+console.log(
+  "Logical AND:",
+  isSunny && isWarm && isChilled,
+); /* Logical AND: A logical AND operation is true and only true, if all operamds are strictly true */
+console.log(
+  "Logical OR:",
+  isSunny || isWarm || isChilled,
+); /* Logical OR: A logical OR operation is true if at least one operand is true */
+console.log(
+  "Logical NOT:",
+  !isSunny,
+); /* Logical NOT: This is an inverse operation that inverts truthy and falsy values */
 
 /** ============== Assignment Operators ============= */
 let c = 10;
 
-/* The "=" operator is the assignment operator used to assign a value to a variable */;
-let d = 5 
+/* The "=" operator is the assignment operator used to assign a value to a variable */ let d = 5;
 
 c += d; /* Equivalent to c = c + d */
 console.log("Assignment +=", c);
@@ -84,6 +91,7 @@ console.log("Assignment %=", c);
 c **= d; /* Equivalent to c = c ** d */
 console.log("Assignment **=", c);
 
+<<<<<<< HEAD
 
 
 <<<<<<< HEAD
@@ -95,6 +103,8 @@ console.log("Assignment **=", c);
 
 // Operator precedence: This refers to the order in which operators are evaluated in an expression.
 =======
+=======
+>>>>>>> e8c2272766e7805cb3b2b566745d2478d3682e59
 /* ============ Bitwise Operators ============= */
 
 /* Bitwise AND: This is denoted by the "&" symbol */
@@ -127,28 +137,30 @@ console.log("Bitwise Left Shift:", result5);
 
 /* Bitwise Right Shift: This is denoted by the ">>" symbol */
 let s = 12;
-let result6 = s >> 2; /* This shifts the bits of s to the right by 2 positions */
+let result6 =
+  s >> 2; /* This shifts the bits of s to the right by 2 positions */
 console.log("Bitwise Right Shift:", result6);
 
 /* Bitwise Unsigned Right Shift: This is denoted by the ">>>" symbol */
 let t = -12;
-let result7 = t >>> 2; /* This shifts the bits of t to the right by 2 positions, filling with zeros from the left */
+let result7 =
+  t >>>
+  2; /* This shifts the bits of t to the right by 2 positions, filling with zeros from the left */
 console.log("Bitwise Unsigned Right Shift:", result7);
 
 /* Bitwise Zero Fill Right Shift: This is denoted by the ">>>" symbol */
 let u = -12;
-let result8 = u >>> 2; /* This shifts the bits of u to the right by 2 positions, filling with zeros from the left */
+let result8 =
+  u >>>
+  2; /* This shifts the bits of u to the right by 2 positions, filling with zeros from the left */
 console.log("Bitwise Zero Fill Right Shift:", result8);
-
-
 
 /* ============ Ternary Operators =========== */
 // condition ? (expression if code is true) : (expression if code is false)
 let age = 18;
-let isAdult = age >= 18 ? "Yes, you are an adult." : "No, you are not an adult.";
+let isAdult =
+  age >= 18 ? "Yes, you are an adult." : "No, you are not an adult.";
 console.log(isAdult);
-
-
 
 /* ============ Type Operators =========== */
 
@@ -157,20 +169,29 @@ let score = 90;
 let typeOfScore = typeof score;
 console.log("Type of score:", typeOfScore);
 
-
 /* The "instanceof" operator: This is used to check if an object is an instance of a specific class or constructor function */
-let today = new Date()
-let typeOfToday = today instanceof Date /* This returns true because "today" is obtained from the Date type */
+let today = new Date();
+let typeOfToday =
+  today instanceof
+  Date; /* This returns true because "today" is obtained from the Date type */
 console.log("Is today an instance of Date?", typeOfToday);
 
-let anotherTypeOfToday = today instanceof Map; /* This returns false because "today" is not obtained from the Map type */
+let anotherTypeOfToday =
+  today instanceof
+  Map; /* This returns false because "today" is not obtained from the Map type */
 console.log("Is today an instance of Map?", anotherTypeOfToday);
 
 let jobs = ["Developer", "Designer", "Manager"];
 let typeOfJobs = jobs instanceof Array;
 console.log("Is jobs an instance of Array?", typeOfJobs);
 
+// Operator precedence: This refers to the order in which operators are evaluated in an expression.
 
+<<<<<<< HEAD
 
 // Operator precedence: This refers to the order in which operators are evaluated in an expression.
 >>>>>>> 5bff08418f4997f7684f71fd919e07d9681860d1
+=======
+let result = 10 - 5 - 2;
+console.log(result);
+>>>>>>> e8c2272766e7805cb3b2b566745d2478d3682e59

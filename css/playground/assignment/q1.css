@@ -106,17 +106,24 @@
   }
 }
 
+
 @keyframes fade-in {
-  from {
-    /* opacity: 2; */
-    content: "yes";
+  0% {
     background-color: red;
   }
-  50% {
+  33% {
+    background-color: red;
+  }
+  34% {
     background-color: green;
   }
-  to {
-    /* opacity: 2; */
+  66% {
+    background-color: green;
+  }
+  67% {
+    background-color: blue;
+  }
+  100% {  
     background-color: blue;
   }
 }
@@ -330,6 +337,7 @@ main {
     }
   }
 
+    /* Question 8 */
   section.slider {
     /* border: 1px solid silver; */
     width: 700px;
@@ -341,6 +349,8 @@ main {
       animation: fade-in 1s infinite;
     }
   }
+
+    /* Question 9 */
 
   section.change {
     width: 700px;
