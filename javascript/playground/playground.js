@@ -43,4 +43,10 @@ const result = number % 2 === 0 ? "Even number" : "Odd number";
 // Result
 console.log(result);
 
-/* */
+/*
+
+Write a program that makes use of ternary operators to grade a user's score according to the prescription below. 
+
+// Excellent -> 70 and above // Very Good -> 60 to 70 // Good -> 50 to 60 // Pass -> 45 to 50 // Fair -> 40 to 45 // Fail -> 40 and below */
+let sentence = "This is me";
+console.log();
