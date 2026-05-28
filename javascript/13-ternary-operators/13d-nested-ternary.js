@@ -32,7 +32,14 @@ const elibibilityMessage = (age < 18)
 
 console.log(elibibilityMessage);
 
+const age = (process.argv[2]);
+const isEligible = false;
 
+const elibibilityMessag = (age < 18)
+                                ? "You are not old enough to vote"
+                                : (isEligible)
+                                ? "You are eligible to cast vote"
+                                : "You may not be able to vote"
 
 /* Do's of Ternary Operators */
 /*
