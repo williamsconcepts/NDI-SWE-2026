@@ -19,19 +19,18 @@ function functionName(arg1, arg) {
 
 /* Function Definition */
 function sayHello() {
-    console.log("Hello user");
+  console.log("Hello user");
 }
 
 /* Function execution | invocation | calling */
-sayHello()
-
+sayHello();
 
 /*
     Function arguments are the input passed to a function to influence its operation
 */
 
 function add(a, b) {
-    console.log("Addition result it", (a + b))
+  console.log("Addition result is", a + b);
 }
 
 // function currying | Curried function
@@ -41,9 +40,8 @@ add(20, 15);
 add(5, 9);
 add(15, 3);
 
-
 /* Calling a function in a function */
 function sayHiAndHello() {
-    console.log("Hi!");
-    sayHello() // Function invocation of a user defined function
+  console.log("Hi!");
+  sayHello(); // Function invocation of a user defined function
 }
