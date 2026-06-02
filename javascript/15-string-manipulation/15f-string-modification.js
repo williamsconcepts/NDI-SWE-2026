@@ -5,10 +5,12 @@ const text = "Javascript";
 const extract = text.slice(0, 4);
 const scriptText = text.slice(4, 10);
 const negString = text.slice(-3)
+const stringEnd = text.slice(4)
 
 console.log(extract);
 console.log(scriptText);
 console.log(negString);
+console.log(stringEnd)
 
 
 
@@ -110,7 +112,7 @@ console.log(repeatedHello);
 /* String Padding: Repeating of characters at starting and ending of a string respectively */
 // .padStart()
 const theGood = "7";
-const theBest = theGood.padStart(3, "0");
+const theBest = theGood.padStart(5, "*");
 console.log(theBest);
 
 

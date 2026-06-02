@@ -186,7 +186,7 @@ for (let step = 0; step < 5; step++) {
 }
 
 // for loop Ex. 2
-for (let i = 0; i < 3; i++) {
+for (let i = 10; i > 0; i--) {
   console.log("Number: " + i);
 }
 
