@@ -164,3 +164,77 @@ function outer() {
 outer();
 
 
+/**
+ * 
+ * Loops
+ * 
+ * Loops repeat code until a condition becomes false. Common loops:
+ * for loop
+ * while loop
+ * do-while loop
+ * forEach loop
+ * for-in loop
+ * for-of loop
+ * 
+ */
+
+//
+
+// for loop Ex. 1
+for (let step = 0; step < 5; step++) {
+  console.log("walking step " + step);
+}
+
+// for loop Ex. 2
+for (let i = 0; i < 3; i++) {
+  console.log("Number: " + i);
+}
+
+// forEach loop Ex. 1
+let colors = ["red", "green", "blue"];
+colors.forEach((color) => console.log(color));
+
+// forEach loop Ex. 2
+[1,2,3,4].forEach(num => console.log(num));
+
+
+// while loop Ex. 1
+let count = 0;
+while(count < 5) {
+  console.log("count: " + count);
+  count++
+}
+
+// do-while loop Ex. 1
+let num = 0;
+do {
+  console.log("num: " + num);
+  num++;
+} while (num < 5);
+
+// for-in loop Ex. 1
+let person1 = {
+  name: "Alice",
+  age: 30,
+  city: "New York"
+};
+for (let key in person1) {
+  console.log(key + ": " + person1[key]);
+}
+
+// for-in loop Ex. 2
+const car = {
+  brand: "Toyota",
+  model: "Camry",
+  year: 2020
+}
+
+for (let key in car) {
+  console.log(key, car[key]);
+}
+
+// for-of loop Ex. 1
+let numbers1 = [10, 20, 30];
+for (let num of numbers1) {
+  console.log(num);
+}
