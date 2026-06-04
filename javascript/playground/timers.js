@@ -6,6 +6,14 @@
  * setInterval()
  * clearTimeout()
  * clearInterval()
+ * 
+ * | Function        | What it does       |
+| --------------- | --------------------- |
+| `setTimeout`    | Runs once after delay |
+| `setInterval`   | Runs repeatedly       |
+| `clearTimeout`  | Cancels timeout       |
+| `clearInterval` | Stops interval        |
+
  */
 
 // Using the setTimout()
@@ -23,12 +31,12 @@ setTimeout(greet, 3000);
 // Using the setInterval()
 
 const run = setInterval(() => {
-   // console.log("Runs every 2 seconds");
+    console.log("Runs every 2 seconds");
 }, 2000);
-
+// stopping setInterval() using clearInterval()
 setTimeout(() => {
     clearInterval(run);
-   // console.log("i just stopped!")
+    console.log("i just stopped!")
 }, 5000)
 
 // stopping setInterval() using clearInterval()
@@ -52,14 +60,15 @@ const timeoutId = setTimeout(() => {
 
 // Countdown Timer
 
-let count = 10;
+// let count = 10;
 
-const timer = setInterval(() => {
-    console.log(count);
-    count--;
+// const timer = setInterval(() => {
+//     console.log(count);
+//     count--;
 
-    if(count === 0) {
-        console.log("Done");
-        clearInterval(timer);
-    }
-}, 1000)
+//     if(count === 0) {
+//         console.log("Done");
+//         clearInterval(timer);
+//     }
+// }, 1000)
+
