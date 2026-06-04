@@ -47,7 +47,7 @@ const fruitCounts = fruits1.reduce((counts, fruit) => {
 }, {});
 console.log(fruitCounts);
 
-// Example 4: given an array of product objects in a user cart, write a function that takes in an array of produt objects, and returns the sum of the prices multiply by the qunatity of all the items in the cart. assignment 1
+// Example 4: given an array of product objects in a user cart, write a function that takes in an array of produt objects, and returns the sum of the prices multiply by the qunatity of all the items in the cart. 
 
 // At cycle 1: accumulator = 0, currentValue = { name: "Rice", price: 10, quantity: 2 } → returns 20
 // At cycle 2: accumulator = 20, currentValue = { name: "Beans", price: 20, quantity: 1 } → returns 40
@@ -62,7 +62,21 @@ const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 console.log(`Sum Total: ${total}`);
 
 
-// Example 5: Given an array of numbers with some numbers repeated, write a function that takes in an array of numbers, and returns a object in the signature {number: 1, occurrances: 2} where the number is the number in the array, and occurances is the number of times that number appears in the array using reduce. assignment 2
+// Example 5: Given an array of numbers with some numbers repeated, write a function that takes in an array of numbers, and returns a object in the signature {number: 1, occurrances: 2} where the number is the number in the array, and occurances is the number of times that number appears in the array using reduce.
+
+// At cycle 1: accumulator = {}, currentValue = 1 → returns {number: 1, occurrances: 1}
+// At cycle 2: accumulator = {1: {number: 1, occurrances: 1}}, currentValue = 2 → returns {1: {number: 1, occurrances: 1}, 2: {number: 2, occurrances: 1}}
+// At cycle 3: accumulator = {1: {number: 1, occurrances: 1}, 2: {number: 2, occurrances: 1}}, currentValue = 3 → returns {1: {number: 1, occurrances: 1}, 2: {number: 2, occurrances: 1}, 3: {number: 3, occurrances: 1}}
+// At cycle 4: accumulator = {1: {number: 1, occurrances: 1}, 2: {number: 2, occurrances: 1}, 3: {number: 3, occurrances: 1}}, currentValue = 2 → returns {1: {number: 1, occurrances: 1}, 2: {number: 2, occurrances: 2}, 3: {number: 3, occurrances: 1}}
+// At cycle 5: accumulator = {1: {number: 1, occurrances: 1}, 2: {number: 2, occurrances: 2}, 3: {number: 3, occurrances: 1}}, currentValue = 4 → returns {1: {number: 1, occurrances: 1}, 2: {number: 2, occurrances: 2}, 3: {number: 3, occurrances: 1}, 4: {number: 4, occurrances: 1}}
+// At cycle 6: accumulator = {1: {number: 1, occurrances: 1}, 2: {number: 2, occurrances: 2}, 3: {number: 3, occurrances: 1}, 4: {number: 4, occurrances: 1}}, currentValue = 1 → returns {1: {number: 1, occurrances: 2}, 2: {number: 2, occurrances: 2}, 3: {number: 3, occurrances: 1}, 4: {number: 4, occurrances: 1}}
+// At cycle 7: accumulator = {1: {number: 1, occurrances: 2}, 2: {number: 2, occurrances: 2}, 3: {number: 3, occurrances: 1}, 4: {number: 4, occurrances: 1}}, currentValue = 5 → returns {1: {number: 1, occurrances: 2}, 2: {number: 2, occurrances: 2}, 3: {number: 3, occurrances: 1}, 4: {number: 4, occurrances: 1}, 5: {number: 5, occurrances: 1}}
+// At cycle 8: accumulator = {1: {number: 1, occurrances: 2}, 2: {number: 2, occurrances: 2}, 3: {number: 3, occurrances: 1}, 4: {number: 4, occurrances: 1}, 5: {number: 5, occurrances: 1}}, currentValue = 3 → returns {1: {number: 1, occurrances: 2}, 2: {number: 2, occurrances: 2}, 3: {number: 3, occurrances: 2}, 4: {number: 4, occurrances: 1}, 5: {number: 5, occurrances: 1}}
+// At cycle 9: accumulator = {1: {number: 1, occurrances: 2}, 2: {number: 2, occurrances: 2}, 3: {number: 3, occurrances: 2}, 4: {number: 4, occurrances: 1}, 5: {number: 5, occurrances: 1}}, currentValue = 4 → returns {1: {number: 1, occurrances: 2}, 2: {number: 2, occurrances: 2}, 3: {number: 3, occurrances: 2}, 4: {number: 4, occurrances: 2}, 5: {number: 5, occurrances: 1}}
+// At cycle 10: accumulator = {1: {number: 1, occurrances: 2}, 2: {number: 2, occurrances: 2}, 3: {number: 3, occurrances: 2}, 4: {number: 4, occurrances: 2}, 5: {number: 5, occurrances: 1}}, currentValue = 2 → returns {1: {number: 1, occurrances: 2}, 2: {number: 2, occurrances: 3}, 3: {number: 3, occurrances: 2}, 4: {number: 4, occurrances: 2}, 5: {number: 5, occurrances: 1}}
+// At cycle 11: accumulator = {1: {number: 1, occurrances: 2}, 2: {number: 2, occurrances: 3}, 3: {number: 3, occurrances: 2}, 4: {number: 4, occurrances: 2}, 5: {number: 5, occurrances: 1}}, currentValue = 1 → returns {1: {number: 1, occurrances: 3}, 2: {number: 2, occurrances: 3}, 3: {number: 3, occurrances: 2}, 4: {number: 4, occurrances: 2}, 5: {number: 5, occurrances: 1}}
+
+
 
 const repeatedNumbers = [1, 2, 3, 2, 4, 1, 5, 3, 4, 2, 1];
 

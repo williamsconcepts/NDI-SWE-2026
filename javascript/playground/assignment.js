@@ -12,6 +12,22 @@ const cart = [
 const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 console.log(`Sum Total: ${total}`);
 
+// using map()
+const cart = [
+    { name: "Rice", price: 10, quantity: 2 },
+    { name: "Beans", price: 20, quantity: 1 },
+    { name: "Garri", price: 15, quantity: 3 }
+];
+
+// At cycle 1: item = { name: "Rice", price: 10, quantity: 2 } → returns 20
+// At cycle 2: item = { name: "Beans", price: 20, quantity: 1 } → returns 20
+// At cycle 3: item = { name: "Garri", price: 15, quantity: 3 } → returns 45
+
+// why this works: the map method returns a new array with the result of the operation done on each item in the array, so we get an array of the prices multiply by the quantity of each item in the cart, and then we use the reduce method to sum up all the prices in the new array.
+const total = cart.map(item => item.price * item.quantity).reduce((sum, price) => sum + price, 0);
+
+console.log(`Sum Total: ${total}`);
+
 
 // assignment 2: Given an array of numbers with some numbers repeated, write a function that takes in an array of numbers, and returns a object in the signature {number: 1, occurrances: 2} where the number is the number in the array, and occurances is the number of times that number appears in the array using reduce. 
 
@@ -22,7 +38,7 @@ const numberCounts = (repeatedNumbers) => {
   const numberCounts = repeatedNumbers.reduce((counts, number) => {
     if (!counts[number]) {
       counts[number] = { number: number, occurrences: 0 };
-    }
+    }                                  
     counts[number].occurrences++;
     return counts;
   }, {});
@@ -39,5 +55,7 @@ function isPalindrome(word) {
 }
 
 // why this works: the function takes a word as input, splits it into an array of characters, reverses the array, and then joins it back into a string. It then compares the original word with the reversed word, and if they are the same, it returns true, indicating that the word is a palindrome; otherwise, it returns false.
+
+
 console.log(isPalindrome("madam"));
 console.log(isPalindrome("hello"));
