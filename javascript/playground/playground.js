@@ -21,13 +21,6 @@ Command line arguments are values passed to a program when it is executed from t
 
 Example 1: The below example uses process.argv property to display the CLI argument passed by the user */
 
-<<<<<<< HEAD:javascript/playground.js
-const name = process.argv[2]
-console.log(`Hello ${name}`)
-
-/*Example 2: Converting Arguments to Numbers 
-Note: Arguments are always recieved as strings*/
-=======
 // const name = process.argv[2];
 // console.log(`Hello ${name}, How was your weekend?`);
 
@@ -57,4 +50,3 @@ Write a program that makes use of ternary operators to grade a user's score acco
 // Excellent -> 70 and above // Very Good -> 60 to 70 // Good -> 50 to 60 // Pass -> 45 to 50 // Fair -> 40 to 45 // Fail -> 40 and below */
 let sentence = "This is me";
 console.log();
->>>>>>> 5e77454e70c4712c28e891b1bece4f4e8ffb85cb:javascript/playground/playground.js
