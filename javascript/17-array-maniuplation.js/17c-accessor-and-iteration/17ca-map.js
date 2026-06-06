@@ -73,3 +73,24 @@ console.log(newPlaces)
 const names = usersArray.map(user => user.name);
 
 console.log(names)
+
+
+/*
+    Problem statement: Assignment
+        given an array of product objects in a user cart, write a function that takes in an array of produt objects, and returns the sum of the prices multiply by the qunatity of all the items in the cart using the map method.
+*/
+
+const cart = [
+    { name: "Rice", price: 10, quantity: 2 },
+    { name: "Beans", price: 20, quantity: 1 },
+    { name: "Garri", price: 15, quantity: 3 }
+];
+
+// At cycle 1: item = { name: "Rice", price: 10, quantity: 2 } → returns 20
+// At cycle 2: item = { name: "Beans", price: 20, quantity: 1 } → returns 20
+// At cycle 3: item = { name: "Garri", price: 15, quantity: 3 } → returns 45
+
+// why this works: the map method returns a new array with the result of the operation done on each item in the array, so we get an array of the prices multiply by the quantity of each item in the cart, and then we use the reduce method to sum up all the prices in the new array.
+const total = cart.map(item => item.price * item.quantity).reduce((sum, price) => sum + price, 0);
+
+console.log(`Sum Total: ${total}`);

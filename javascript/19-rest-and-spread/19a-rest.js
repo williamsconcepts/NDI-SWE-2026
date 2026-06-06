@@ -24,3 +24,15 @@ function sumNumbers(...numbers) {
 const sumResult = sumNumbers(1,2,3,4,5,6)
 
 console.log(sumResult)
+
+
+/*    Problem Statement:
+        Write a function that accepts an indefinite number of string arguments, and
+        concatenates all of them together, and returns the result
+*/
+function concatenateStrings(...strings) {
+    return strings.join(" ");
+}
+
+const concatenatedResult = concatenateStrings("Hello", "world", "from", "JavaScript");
+console.log(concatenatedResult);

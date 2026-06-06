@@ -91,6 +91,20 @@ console.log("Assignment %=", c);
 c **= d; /* Equivalent to c = c ** d */
 console.log("Assignment **=", c);
 
+<<<<<<< HEAD
+
+
+<<<<<<< HEAD
+/** ============== Bitwise Operators ============= */
+
+
+
+
+
+// Operator precedence: This refers to the order in which operators are evaluated in an expression.
+=======
+=======
+>>>>>>> e8c2272766e7805cb3b2b566745d2478d3682e59
 /* ============ Bitwise Operators ============= */
 
 /* Bitwise AND: This is denoted by the "&" symbol */
@@ -173,5 +187,11 @@ console.log("Is jobs an instance of Array?", typeOfJobs);
 
 // Operator precedence: This refers to the order in which operators are evaluated in an expression.
 
+<<<<<<< HEAD
+
+// Operator precedence: This refers to the order in which operators are evaluated in an expression.
+>>>>>>> 5bff08418f4997f7684f71fd919e07d9681860d1
+=======
 let result = 10 - 5 - 2;
 console.log(result);
+>>>>>>> e8c2272766e7805cb3b2b566745d2478d3682e59

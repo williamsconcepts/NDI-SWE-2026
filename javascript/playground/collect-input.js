@@ -50,18 +50,14 @@ const score = Number(process.argv[2]);
 
 // using nested ternery operators
 // const score = 65;
+const score = Number(process.argv[2]);
+// using nested ternary operators
+const grade = (score >= 70) 
+                        ? "Excellent" : 
+                        (score >= 60) ? "Very good" :
+                        (score >= 50) ? "Good" :
+                        (score >= 45) ? "Pass" :
+                        (score >= 40) ? "Fair" :
+                        "Fail";
 
-const grade =
-  score >= 70
-    ? "Excellent"
-    : score >= 60
-      ? "Very Good"
-      : score >= 50
-        ? "Good"
-        : score >= 45
-          ? "Pass"
-          : score >= 40
-            ? "Fair"
-            : "Fail";
-
-console.log(`Grade: ${grade}`);
+console.log(`Your grade is: ${grade}`);

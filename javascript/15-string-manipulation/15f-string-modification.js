@@ -88,7 +88,7 @@ console.log(repeatedHello);
 /* String Padding: Repeating of characters at starting and ending of a string respectively */
 // .padStart()
 const theGood = "7";
-const theBest = theGood.padStart(3, "0");
+const theBest = theGood.padStart(5, "*");
 console.log(theBest);
 
 // .padEnd()

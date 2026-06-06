@@ -28,6 +28,7 @@ console.log(checkIsActive(isActive))
 
 /* Implementing the above using ternary as function return */
 const checkIsActive2 = status => status ? "green" : "gray";
+const checkIsActive3 = status => status ? "green" : "grey";
 
 
 console.log(checkIsActive2(isActive))
