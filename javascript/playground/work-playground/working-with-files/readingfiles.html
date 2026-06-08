@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>reading files</title>
+  </head>
+  <body>
+    <h1>Reading files</h1>
+    <input type="file" onchange="uploadAndReadFiles(this.files)" />
+    <div id="message"></div>
+
+    <script>
+      function uploadAndReadFiles(files) {
+        let fr = new FileReader();
+        fr.onload = function (e) {
+          message.innerHTML = e.target.result;
+        };
+        fr.readAsText(files[0]);
+      }
+    </script>
+  </body>
+</html>

@@ -5,25 +5,25 @@
  */
 
 // using console.log()
-// function addTwoNumbers(x, y) {
-//   console.log(x + y);
-// }
+function addTwoNumbers(x, y) {
+  console.log(x + y);
+}
 
 // using return
-// function addTwoNumbers(x, y) {
-//   return x + y;
-// }
+function addTwoNumbers(x, y) {
+  return x + y;
+}
 
-// let result = addTwoNumbers(4, 5);
-// console.log(result);
+let result = addTwoNumbers(4, 5);
+console.log(result);
 
-// let resultsArr = [];
+let resultsArr = [];
 
-// for (let i = 0; i < 10; i++) {
-//   let result = addTwoNumbers(i, 2 * 1);
-//   resultsArr.push(result);
-// }
-// console.log(resultsArr);
+for (let i = 0; i < 10; i++) {
+  let result = addTwoNumbers(i, 2 * 1);
+  resultsArr.push(result);
+}
+console.log(resultsArr);
 
 /**
  * Practice
@@ -42,13 +42,13 @@
  * 7. You should see the values [0, 6, 14, 24, 36, 50, 66, 84, 104, 126] for the array in the console.
  */
 
-// let arrNum = [];
+let arrNum = [];
 
-// for (let i = 0; i < 10; i++) {
-//   let res = addTwoNumbers(i, 5 * i);
-//   arrNum.push(res);
-// }
-// console.log(arrNum);
+for (let i = 0; i < 10; i++) {
+  let res = addTwoNumbers(i, 5 * i);
+  arrNum.push(res);
+}
+console.log(arrNum);
 
 // returning using an arrow function
 let addNumbers = (x, y) => x + y;
@@ -56,7 +56,7 @@ let addNumbers = (x, y) => x + y;
 let resul = addNumbers(43, 64);
 console.log(resul);
 
-let addTwoNumbers = (x, y) => {
+let add = (x, y) => {
   console.log("adding");
-  return x + y
-}
+  return x + y;
+};

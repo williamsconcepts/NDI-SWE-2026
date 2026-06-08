@@ -9,7 +9,12 @@
 
 /**
  * Callbacks are functions that takes another function as an argument, which is then called wheh the rest of te initial function has finished. (A function calling a function).
+ *
+ * concurrency enables our code to do multiple things ath the same time and we can determine the order of things usuing callbacks,promises and the async and await keywords.
+ *
+ *
  */
+
 // use case 1
 function doSomething(callback) {
   callback();
@@ -109,32 +114,3 @@ function result() {
 
 // call function
 processUser("Ebube dike", result);
-
-/**
- * Promises
- *
- * A promise is a special object that connects code that needs to produce a result and the code that needs to use this result in the next step.
- *
- * resolve()
- * reject()
- */
-
-let promise = new Promise(function (resolve, reject) {
-  // do something that might take a while
-  // let's just set x insead for this example
-  let x = 20;
-  if (x > 20) {
-    resolve(x); // on success
-  } else {
-    reject("Too low"); // an error
-  }
-});
-
-promise.then(
-  function (value) {
-    console.log("succes:", value);
-  },
-  function (error) {
-    console.log("Error:", error);
-  },
-);
