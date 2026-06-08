@@ -95,7 +95,9 @@ getData();
  *
  * when resolve() is called, the promise is presumed to be successful and whatever is between the arrows is returned and used as input for the then() method on the promise object.
  *
- * when reject() is caleld, the promise failed and the catch() method on the promise object is executed with the argument of the reject() function.
+ * when reject() is called, the promise failed and the catch() method on the promise object is executed with the argument of the reject() function.
+ * 
+ * then() is apromise itself, so when it retuns we can use the result for the nect then() instance. we can chain the then() instances.
  */
 
 let promise = new Promise(function (resolve, reject) {
