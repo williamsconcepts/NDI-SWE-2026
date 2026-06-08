@@ -97,7 +97,7 @@ getData();
  *
  * when reject() is called, the promise failed and the catch() method on the promise object is executed with the argument of the reject() function.
  * 
- * then() is apromise itself, so when it retuns we can use the result for the nect then() instance. we can chain the then() instances.
+ * then() is a promise itself, so when it retuns we can use the result for the next then() instance. we can chain the then() instances.
  */
 
 let promise = new Promise(function (resolve, reject) {

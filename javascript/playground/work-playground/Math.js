@@ -20,7 +20,7 @@ console.log(Math.random(34));
 const num = Math.floor(Math.random() * 10);
 console.log(num);
 
-// Math.round() - Rounds tothe nearest integer
+// Math.round() - Rounds to the nearest integer
 console.log(Math.round(4.7));
 console.log(Math.round(4.4));
 
@@ -43,3 +43,20 @@ console.log(Math.sqrt(81));
 
 // Math.abs() - Returns absolute value
 console.log(Math.abs(-90));
+
+
+// function to generate a random whole number
+// between the min and max value
+function anyNumber(min, max) {
+
+  // using the Math.floor() to round down and remove decimal part and the math.random() to generate a decimal.
+  // Math.random() generates a decimal between 0 and 0.999...
+  // Multiplying by (max - min + 1) scales it to the desired range.
+  // Math.floor() removes the decimal part.
+  // Adding min shifts the range so it starts at the minimum value.
+
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+
+// displays a random number between 1 and 10
+console.log(anyNumber(3,8));

@@ -1,6 +1,6 @@
 /**
  * async await
- * with the async keyword, we can makea funtion return a promise. This makes teh promises nicer to read.
+ * with the async keyword, we can make a funtion return a promise. This makes teh promises nicer to read.
  *
  */
 
