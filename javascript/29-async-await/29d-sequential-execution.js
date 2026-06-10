@@ -18,8 +18,7 @@ const commentsPromise = new Promise((resolve, reject) => {
 
 /* Sequential Execution */
 /* 
-    Sequential Execution. Each item, wait for the one before it before executing, irrespective
-    of how long the later promises take to resolve
+    Sequential Execution. Each item, waits for the one before it before executing, irrespective of how long the later promises take to resolve
 */
 
 const user = await userPromise

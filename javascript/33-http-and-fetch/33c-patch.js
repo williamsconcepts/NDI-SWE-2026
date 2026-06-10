@@ -20,6 +20,6 @@ const updateUserProperty = (postId, userObj) => {
 updateUserProperty(
     20,
     {
-        title: "This is a new post title"
+        title: "This is a new post title by ebube"
     }
 )
