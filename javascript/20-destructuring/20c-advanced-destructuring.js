@@ -6,7 +6,7 @@ const items = {
 }
 
 const {
-    content: [, secondItem ],
+    content: [, , secondItem ],
     location: { postalCode }
 } = items
 

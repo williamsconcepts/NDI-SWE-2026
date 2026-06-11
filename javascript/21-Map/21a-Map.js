@@ -2,7 +2,7 @@
     A Map is a collection of keyed data items.
 
     Its is similar to an object,, but however, it allows keys of any type, including functions, 
-    object or primives, and preserves insertion order.
+    object or primitives, and preserves insertion order.
 
     Maps perform better in scenarios involving frequent additions and removals
 */
@@ -18,7 +18,7 @@ const userName = userMap.get("name");
 
 console.log(userMap.get("name")) // 
 
-console.log("Map size", userMap.size) // Obtaining the number of items inour map
+console.log("Map size", userMap.size) // Obtaining the number of items in our map
 
 userMap.delete("age") // Deletes an entry from the map object
 
