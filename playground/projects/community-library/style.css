@@ -6,7 +6,7 @@
 
 body{
     font-family:Arial, sans-serif;
-    background:#f4f6f8;
+    background: linear-gradient(135deg, #9dcadf, #d99ae6);
     padding:30px;
 }
 
@@ -46,7 +46,19 @@ h1{
 .card button{
     padding:10px;
     cursor:pointer;
+    background: linear-gradient(135deg, #9dcadf, #d99ae6);
 }
+
+.clear {
+  
+    .clear-btn {
+    padding:10px;
+    cursor:pointer;
+    background: linear-gradient(135deg, #9dcadf, #d99ae6);
+    
+}
+}
+
 
 .stats{
     display:grid;
