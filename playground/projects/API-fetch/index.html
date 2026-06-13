@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Comparison</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>Parallel vs Sequential Requests</h1>
+
+        <div class="buttons">
+
+            <button id="parallel-btn">
+                Run Parallel Requests
+            </button>
+
+            <button id="sequential-btn">
+                Run Sequential Requests
+            </button>
+
+        </div>
+
+        <section class="results">
+
+            <div class="card">
+                <h2>Parallel Requests</h2>
+                <div id="parallel-output"></div>
+            </div>
+
+            <div class="card">
+                <h2>Sequential Requests</h2>
+                <div id="sequential-output"></div>
+            </div>
+
+        </section>
+
+    </main>
+
+</body>
+</html>

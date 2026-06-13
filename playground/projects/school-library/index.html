@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <main class="container">
+
+        <h1>📚 Community Knowledge Library</h1>
+
+        <section class="grid">
+
+            <div class="card">
+                <h2>Add Book</h2>
+
+                <input id="book-title" type="text" placeholder="Book Title">
+
+                <input id="book-author" type="text" placeholder="Author">
+
+                <input id="book-isbn" type="text" placeholder="ISBN">
+
+                <input id="book-year" type="number" placeholder="Year Published">
+
+                <button id="add-book-btn">
+                    Add Book
+                </button>
+            </div>
+
+            <div class="card">
+                <h2>Register Member</h2>
+
+                <input id="member-name" type="text" placeholder="Member Name">
+
+                <input id="member-id" type="text" placeholder="Member ID">
+
+                <button id="register-member-btn">
+                    Register Member
+                </button>
+            </div>
+
+            <div class="card">
+                <h2>Borrow Book</h2>
+
+                <select id="borrow-member"></select>
+
+                <select id="borrow-book"></select>
+
+                <button id="borrow-btn">
+                    Borrow Book
+                </button>
+            </div>
+
+            <div class="card">
+                <h2>Return Book</h2>
+
+                <select id="return-member"></select>
+
+                <select id="return-book"></select>
+
+                <button id="return-btn">
+                    Return Book
+                </button>
+            </div>
+
+        </section>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3>Total Books</h3>
+                <p id="total-books">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Available Books</h3>
+                <p id="available-books">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Borrowed Books</h3>
+                <p id="borrowed-books">0</p>
+            </div>
+
+            <div class="stat-card">
+                <h3>Members</h3>
+                <p id="total-members">0</p>
+            </div>
+
+        </section>
+
+        <section class="lists">
+
+            <div class="card">
+                <h2>Available Books</h2>
+                <ul id="available-book-list"></ul>
+            </div>
+
+            <div class="card">
+                <h2>Members</h2>
+                <ul id="member-list"></ul>
+            </div>
+
+            <button id="clear-library">
+                Clear Library
+            </button>
+        </section>
+
+    </main>
+
+</body>
+</html>
